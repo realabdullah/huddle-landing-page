@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(images/bg-desktop.svg);
+    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    color: blueviolet;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.imgclass {
+    margin: 50px;
+}
+
+.about {
+    margin-top: 70px;
+    margin-right: 130px;
+}
+
+.about h1 {
+    line-height: 3.1rem;
+    color: white;
+}
+
+.about p {
+    line-height: 1.6rem;
+    color: white;
+}
+
+.btn {
+    background: white;
+    color: blueviolet;
+    margin-top: 15px;
+    padding: 15px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 5px 9px #474747;
+}
+
+@media (max-width:900px) {
+    body {
+        background: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: blueviolet;
+        background-size: cover;
+    }
+    .logo {
+        margin: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgclass img {
+        width: 396px;
+        height: 293px;
+    }
+    .about {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(118, 91%, 50%);
+}
